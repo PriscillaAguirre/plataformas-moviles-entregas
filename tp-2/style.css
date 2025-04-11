@@ -1,0 +1,69 @@
+*{
+    background-color: #222;
+    font-family: sans-serif;
+}
+h1 {
+    text-align: center;
+    text-transform: uppercase; /* Bonus: Mayúsculas */
+    transition: color 0.3s ease; 
+}
+
+h1:hover {
+    color: #66f;
+}
+
+p {
+    font-family: sans-serif;
+    color: #ee6;
+}
+
+h1, h2, h3 {
+    color: #eee;
+    text-transform: uppercase; /* Bonus: Mayúsculas */
+}
+
+strong {
+    border-bottom: 1px solid white;
+}
+
+/* Estilo para clase the-force */
+.the-force {
+    background-color: #444;
+    font-weight: bold;
+}
+
+.light-side {
+    color: #66f;
+}
+
+.dark-side {
+    color: #f33;
+}
+
+#og-trilogy {
+    list-style-type: circle;
+}
+
+.movies-list:nth-of-type(2) {
+    padding-left: 20px;
+}
+
+/* Último elemento del tercer listado de películas */
+.movies-list:nth-of-type(3) li:last-child {
+    margin-top: 20px;
+}
+
+/* primera línea del primer párrafo */
+p:first-of-type::first-line {
+    color: #efe;
+}
+
+/*enlaces visitados */
+a:visited {
+    color: gray;
+}
+
+/* enlaces sin atributo href */
+a:not([href]) {
+    font-style: italic;
+}
