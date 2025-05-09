@@ -1,0 +1,70 @@
+@media (min-width: 401px){
+    body{
+        background-color: rgb(40, 60, 80);
+    }
+}
+
+@media (max-width: 799px) {
+    h1{
+        text-align: center;
+    }
+}
+
+/* Establece max-width del article a 50ch cuando la orientación es horizontal */
+@media (orientation: landscape) {
+    article {
+        max-width: 50ch;
+    }
+}
+
+/*estilo para imprimir en papel.*/
+@media print {
+    p {
+        font-family: serif;
+    }
+}
+
+@media (min-height: 200px){
+    h1{
+        background-color: #334;
+    }
+}
+
+@media (prefers-color-scheme: light){
+    body, h1 {
+        background-color: #DDD;
+        color: #111;
+    }
+}
+
+
+/* Pantalla sin soporte hover: fondo y padding a los enlaces */
+@media (hover:none) and (pointer: coarse){
+    a{
+        background-color: #212;
+        padding: 2px 5px;
+        display: inline-block;
+    }
+}
+
+/*cuando la pantalla tiene entre 800 y 899 de ancho, se oculta la img.*/
+@media screen and (min-width: 800px) and (max-width: 899px){
+    img {
+        display: none;
+    }
+}
+
+/*la imagen se fija cuando este entre 200px y 400px*/
+@media screen and (min-width: 200px) and (max-width: 400px){
+    img {
+        height: 400px;
+        object-fit: cover;
+    }
+}
+
+/*cambia de color cuando la pantalla sea mayor a 2dppx. */
+@media (min-resolution: 2dppx){
+    article {
+        background-color: #667;
+    }
+}
